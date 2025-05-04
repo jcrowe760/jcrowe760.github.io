@@ -1,0 +1,66 @@
+/* Stylesheet for the main page:
+Group 5: Josh Crowe, Abigail Blevins, Wesley Walling */
+html {
+    /*px is pixels. in this case the base font sixe is 15 pixels high*/
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(21, 21, 124); /*This sets the background color for the entire page*/
+}
+
+body {
+    width: 750px; 
+    margin: 40px auto; 
+    background-color: white;
+    padding: 0 20px 20px 20px; 
+    border: 2px solid black; 
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+/* Clear floats after columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Image rollover*/
+#image1 {
+    background-image: url("../images/burger.jpg");
+    width: 250px;
+    height: 175px;
+    display: block;
+}
+#image1:hover {
+    background-image: url("../images/meatball.jpg");
+}
+
+#image3 {
+    background-image: url("../images/cookiebar.png");
+    width: 250px;
+    height: 175px;
+    display: block;
+}
+#image3:hover {
+    background-image: url("../images/ice_cream.jpg");
+}
+/* Nav menu styling */
+#nav_menu ul {
+    list-style-type: none; 
+    padding: 1em 0;
+    text-align: left;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black; 
+} 
+#nav_menu ul li { 
+    display: inline; 
+    padding: 0 1.5em; 
+} 
+#nav_menu ul li a { 
+    font-weight: bold; 
+    color: blue; 
+}
+
+#nav_menu ul li a.current { text-decoration: none; }
