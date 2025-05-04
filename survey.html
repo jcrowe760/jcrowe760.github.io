@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" /> 
+  <link href="styles/surveystyles.css" rel="stylesheet" /> 
+  <title>Simple and Easy Recipes</title>  
+</head>
+<script defer src="scripts/survey.js"></script> <!--Fixed inccorrect path to script-->
+<body>
+  <img src="images/Cookie.png" alt="Cookie" /> <!--Can someone make this image float to the left of the text?-->
+    <!--Horizontal Nav Menu for the top of the page-->
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="survey.html">Survey</a></li>
+            <li><a href="about_us.html">About Us</a></li> 
+        </ul>
+    </nav>
+  <h1>Survey Form</h1>
+  <form id="surveyForm">
+    <label>
+      Name:
+      <input type="text" name="name" required />
+    </label><br /><br />
+    <label>
+      Favorite Recipe:
+      <select name="recipe" required>
+        <option value="">--Select--</option>
+        <option value="Cheeseburger, Recipe 1">Recipe 1</option>
+        <option value="Meatballs, Recipe 2">Recipe 2</option>
+        <option value="Ice Cream, Recipe 3">Recipe 3</option>
+        <option value="Cookie Bars, Recipe 4">Recipe 4</option>
+      </select>
+    </label><br /><br />
+    <button type="submit">Submit Survey</button>
+  </form>
+  <div id="response"></div>
+</body>
+</html>

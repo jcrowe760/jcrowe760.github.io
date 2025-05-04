@@ -1,0 +1,44 @@
+html {
+    /*px is pixels. in this case the base font sixe is 15 pixels high*/
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(21, 21, 124); /*This sets the background color for the entire page*/
+}
+
+body {
+    width: 750px; 
+    margin: 40px auto; 
+    background-color: white;
+    padding: 0 20px 20px 20px; 
+    border: 2px solid black; 
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; 
+}
+
+#nav_menu ul {
+    list-style-type: none; 
+    padding: 1em 0;
+    text-align: left;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black; 
+} 
+#nav_menu ul li { 
+    display: inline; 
+    padding: 0 1.5em; 
+} 
+#nav_menu ul li a { 
+    font-weight: bold; 
+    color: blue; 
+}
+
+#nav_menu ul li a.current { text-decoration: none; }
